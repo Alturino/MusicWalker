@@ -3,7 +3,7 @@ package com.onirutla.musicwalker.ui.screens
 import com.onirutla.musicwalker.core.media.playback_controller.PlayerState
 import com.onirutla.musicwalker.domain.models.Music
 
-data class MusicPlaybackUiState(
+data class MusicPlayerUiState(
     val playerState: PlayerState = PlayerState.STOPPED,
     val currentMusic: Music? = Music(),
     val currentPosition: Long = 0L,

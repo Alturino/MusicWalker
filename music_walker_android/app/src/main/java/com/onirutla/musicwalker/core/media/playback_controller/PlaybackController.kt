@@ -1,7 +1,7 @@
 package com.onirutla.musicwalker.core.media.playback_controller
 
 import com.onirutla.musicwalker.domain.models.Music
-import com.onirutla.musicwalker.ui.screens.MusicPlaybackUiState
+import com.onirutla.musicwalker.ui.screens.MusicPlayerUiState
 import kotlinx.coroutines.flow.Flow
 
 interface PlaybackController {
@@ -24,7 +24,5 @@ interface PlaybackController {
 
     fun setRepeatOneEnabled(isEnabled: Boolean)
 
-    fun getCurrentPosition(): Long
-
-    val musicPlaybackUiState: Flow<MusicPlaybackUiState>
+    val playerUiState: Flow<MusicPlayerUiState>
 }

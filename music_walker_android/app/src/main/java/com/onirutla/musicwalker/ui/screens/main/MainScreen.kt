@@ -23,10 +23,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.onirutla.musicwalker.R
 import com.onirutla.musicwalker.core.media.playback_controller.PlayerState
-import com.onirutla.musicwalker.domain.models.Music
+import com.onirutla.musicwalker.domain.models.dummyMusic
 import com.onirutla.musicwalker.ui.components.MusicItem
 import com.onirutla.musicwalker.ui.components.MusicMiniPlayerCard
-import com.onirutla.musicwalker.ui.screens.MusicPlaybackUiState
+import com.onirutla.musicwalker.ui.screens.MusicPlayerUiState
 import com.onirutla.musicwalker.ui.theme.MusicWalkerTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -34,7 +34,7 @@ import com.onirutla.musicwalker.ui.theme.MusicWalkerTheme
 fun MainScreen(
     modifier: Modifier = Modifier,
     state: MainScreenState,
-    playbackUiState: MusicPlaybackUiState,
+    playbackUiState: MusicPlayerUiState,
     onEvent: (MainScreenEvent) -> Unit,
     onUiEvent: (MainScreenUiEvent) -> Unit,
 ) {
@@ -109,90 +109,12 @@ fun MainScreenPreview() {
         MainScreen(
             state = MainScreenState(
                 isLoading = false,
-                musics = listOf(
-                    Music(
-                        id = "wake_up_01",
-                        title = "Intro - The Way Of Waking Up (feat. Alan Watts)",
-                        album = "Wake Up",
-                        artist = "The Kyoto Connection",
-                        genre = "Electronic",
-                        source = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/01_-_Intro_-_The_Way_Of_Waking_Up_feat_Alan_Watts.mp3",
-                        image = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/art.jpg",
-                        trackNumber = 1,
-                        totalTrackCount = 13,
-                        duration = 90,
-                        site = "http://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957/"
-                    ),
-                    Music(
-                        id = "wake_up_01",
-                        title = "Intro - The Way Of Waking Up (feat. Alan Watts)",
-                        album = "Wake Up",
-                        artist = "The Kyoto Connection",
-                        genre = "Electronic",
-                        source = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/01_-_Intro_-_The_Way_Of_Waking_Up_feat_Alan_Watts.mp3",
-                        image = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/art.jpg",
-                        trackNumber = 1,
-                        totalTrackCount = 13,
-                        duration = 90,
-                        site = "http://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957/"
-                    ),
-                    Music(
-                        id = "wake_up_01",
-                        title = "Intro - The Way Of Waking Up (feat. Alan Watts)",
-                        album = "Wake Up",
-                        artist = "The Kyoto Connection",
-                        genre = "Electronic",
-                        source = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/01_-_Intro_-_The_Way_Of_Waking_Up_feat_Alan_Watts.mp3",
-                        image = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/art.jpg",
-                        trackNumber = 1,
-                        totalTrackCount = 13,
-                        duration = 90,
-                        site = "http://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957/"
-                    ),
-                    Music(
-                        id = "wake_up_01",
-                        title = "Intro - The Way Of Waking Up (feat. Alan Watts)",
-                        album = "Wake Up",
-                        artist = "The Kyoto Connection",
-                        genre = "Electronic",
-                        source = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/01_-_Intro_-_The_Way_Of_Waking_Up_feat_Alan_Watts.mp3",
-                        image = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/art.jpg",
-                        trackNumber = 1,
-                        totalTrackCount = 13,
-                        duration = 90,
-                        site = "http://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957/"
-                    ),
-                    Music(
-                        id = "wake_up_01",
-                        title = "Intro - The Way Of Waking Up (feat. Alan Watts)",
-                        album = "Wake Up",
-                        artist = "The Kyoto Connection",
-                        genre = "Electronic",
-                        source = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/01_-_Intro_-_The_Way_Of_Waking_Up_feat_Alan_Watts.mp3",
-                        image = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/art.jpg",
-                        trackNumber = 1,
-                        totalTrackCount = 13,
-                        duration = 90,
-                        site = "http://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957/"
-                    ),
-                ),
+                musics = dummyMusic,
             ),
             onEvent = {},
-            playbackUiState = MusicPlaybackUiState(
+            playbackUiState = MusicPlayerUiState(
                 PlayerState.PLAYING,
-                currentMusic = Music(
-                    id = "wake_up_01",
-                    title = "Intro - The Way Of Waking Up (feat. Alan Watts)",
-                    album = "Wake Up",
-                    artist = "The Kyoto Connection",
-                    genre = "Electronic",
-                    source = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/01_-_Intro_-_The_Way_Of_Waking_Up_feat_Alan_Watts.mp3",
-                    image = "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/art.jpg",
-                    trackNumber = 1,
-                    totalTrackCount = 13,
-                    duration = 90,
-                    site = "http://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957/"
-                ),
+                currentMusic = dummyMusic[0],
             ),
             onUiEvent = {}
         )
