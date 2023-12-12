@@ -90,11 +90,6 @@ If you encounter any bugs, issues, or have suggestions for improvements, please 
 repository. Provide as much detail as possible to help us understand and resolve the problem
 quickly.
 
-## Contact
-
-_Provide information about how users or other developers can get in touch with you. This can include
-your email, social media profiles, or links to your personal website._
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute
