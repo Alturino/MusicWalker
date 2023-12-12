@@ -18,37 +18,7 @@ data class Music(
     val trackNumber: Int = 0,
 )
 
-fun Music.toMediaItem() = MediaItem.Builder()
-    .setMediaId(source)
-    .setUri(source)
-    .setMediaMetadata(
-        MediaMetadata.Builder()
-            .setTitle(title)
-            .setArtist(artist)
-            .setGenre(genre)
-            .setAlbumTitle(album)
-            .setArtworkUri(image.toUri())
-            .setTrackNumber(trackNumber)
-            .setTotalTrackCount(totalTrackCount)
-            .build()
-    )
-    .build()
 
-fun List<Music>.toMediaItems() = map { it.toMediaItem() }
-
-fun MediaItem.toMusic() = Music(
-    id = mediaId,
-    source = mediaId,
-    title = mediaMetadata.title.toString(),
-    artist = mediaMetadata.artist.toString(),
-    genre = mediaMetadata.genre.toString(),
-    album = mediaMetadata.albumTitle.toString(),
-    image = mediaMetadata.artworkUri.toString(),
-    trackNumber = mediaMetadata.trackNumber ?: 0,
-    totalTrackCount = mediaMetadata.totalTrackCount ?: 0,
-)
-
-fun List<MediaItem>.toMusics() = map { it.toMusic() }
 
 val dummyMusic = listOf(
     Music(

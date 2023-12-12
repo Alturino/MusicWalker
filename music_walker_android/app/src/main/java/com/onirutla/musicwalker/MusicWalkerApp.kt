@@ -23,4 +23,5 @@ class MusicWalkerApp : Application(), ImageLoaderFactory {
     }
 
     override fun newImageLoader(): ImageLoader = imageLoader
+
 }

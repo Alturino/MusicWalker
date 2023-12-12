@@ -5,24 +5,14 @@ import com.onirutla.musicwalker.ui.screens.MusicPlayerUiState
 import kotlinx.coroutines.flow.Flow
 
 interface PlaybackController {
-
     fun addMediaItems(musics: List<Music>)
-
     fun play(mediaItemIndex: Int)
-
     fun resume()
-
     fun pause()
-
     fun seekTo(position: Long)
-
     fun seekToNext()
-
     fun seekToPrevious()
-
     fun setShuffleModeEnabled(isEnabled: Boolean)
-
     fun setRepeatOneEnabled(isEnabled: Boolean)
-
     val playerUiState: Flow<MusicPlayerUiState>
 }

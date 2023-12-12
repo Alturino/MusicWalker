@@ -48,6 +48,11 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.5"
     }
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -103,6 +108,7 @@ dependencies {
     implementation(libs.ktor.client.logging.jvm)
     implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.serialization.kotlinx.json)
+    testImplementation(libs.ktor.client.mock)
 
     // Coroutine
     implementation(libs.kotlinx.coroutines.core)
