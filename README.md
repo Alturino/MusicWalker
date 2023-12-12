@@ -5,6 +5,8 @@ aims to showcase my skill and applying what I've learned in Android Development.
 app enthusiast or a fellow developer, this README will guide you through setup instructions,
 and how you can contribute to the project.
 
+All music in this app is from uamp google storage or can be obtained form this [link](https://storage.googleapis.com/uamp/catalog.json)
+
 ## Table of Contents
 
 - [App Preview](#App-Preview)
@@ -17,7 +19,9 @@ and how you can contribute to the project.
 - [Contact](#Contact)
 - [License](#License)
 
-<!-- ## App Preview -->
+## App Preview
+[Screen_recording_20231212_161100.webm](https://github.com/onirutlA/MusicWalker/assets/59439682/3fb22dfb-05b2-41d4-bee3-5c3e5b12f212)
+
 
 ## Getting Started
 
