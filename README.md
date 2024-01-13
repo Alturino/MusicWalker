@@ -1,11 +1,8 @@
 # Music Walker
 
-Welcome to the Music Walker! This repository showcases my Android app, Music Walker, which
-aims to showcase my skill and applying what I've learned in Android Development. Whether you're an
-app enthusiast or a fellow developer, this README will guide you through setup instructions,
-and how you can contribute to the project.
+Music Walker is a music player app for Android implemented with Jetpack Media3.
 
-All music in this app is from uamp google storage or can be obtained form this [link](https://storage.googleapis.com/uamp/catalog.json)
+All music in this app is from [uamp](https://github.com/android/uamp) google storage or can be obtained form this [link](https://storage.googleapis.com/uamp/catalog.json)
 
 ## Table of Contents
 
@@ -40,7 +37,7 @@ Follow these steps to get the app up and running on your Android device or emula
 
    ```bash
    git clone https://github.com/onirutlA/MusicWalker.git
-   cd MusicWalker
+   cd MusicWalker/music_walker_android
    ```
 
 2. **Open in Android Studio:** Launch Android Studio and select "Open an existing Android Studio
