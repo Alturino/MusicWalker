@@ -2,7 +2,7 @@ package com.onirutla.musicwalker.core.media.playback_controller
 
 import com.onirutla.musicwalker.domain.models.Music
 import com.onirutla.musicwalker.ui.screens.MusicPlayerUiState
-import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.StateFlow
 
 interface PlaybackController {
     fun addMediaItems(musics: List<Music>)
@@ -14,5 +14,5 @@ interface PlaybackController {
     fun seekToPrevious()
     fun setShuffleModeEnabled(isEnabled: Boolean)
     fun setRepeatOneEnabled(isEnabled: Boolean)
-    val playerUiState: Flow<MusicPlayerUiState>
+    val playerUiState: StateFlow<MusicPlayerUiState>
 }
